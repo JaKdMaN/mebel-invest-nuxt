@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import "variables";
+
+:root{
+  --bg-color: #{$bg-color};
+  --nav-link-color: #{$nav-link-color};
+  --secondary-color: #{$secondary-color};
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: $bg-color;
+}
+a {
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: none;
+  }
+}
+.button {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 37px 127px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+.button-primary {
+  background: var(--secondary-color);
+  &:hover {
+    background: darken($secondary-color, 8%) !important;
+    transition: all 0.3s ease !important;
+  }
+  &:active {
+    background: darken($secondary-color, 12%) !important;
+  }}
+
+label{
+  margin: 0;
+}
