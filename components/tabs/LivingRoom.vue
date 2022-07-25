@@ -70,16 +70,16 @@ export default {
       examplesSwiperOptions: {
         breakpointsInverse: true,
         slidesPerView: 3,
-        slidesPerGroup: 3,
+        slidesPerGroup: 1,
         navigation: {
           nextEl: ".rightClick",
           prevEl: ".leftClick",
+        },
           breakpoints: {
             1: {slidesPerView: 1},
             560: {slidesPerView: 2,spaceBetween: 20},
             1024: {slidesPerView: 3,spaceBetween: 20}
           }
-        }
       }
     }
   }
@@ -88,10 +88,6 @@ export default {
 <style lang="scss" scoped>
 
 .swiper-slide {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   & img {
     margin: auto;

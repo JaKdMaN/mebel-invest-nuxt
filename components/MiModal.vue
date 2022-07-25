@@ -154,17 +154,16 @@ export default {
 
 <style lang="scss" scoped>
 
-.slide-fade-enter-active,
-.slide-fade-leave-active {
-  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+.slide-fade-enter-active {
+  transition: all .3s ease;
 }
-
-.slide-fade-enter-from,
-.slide-fade-leave-to {
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to {
   transform: translateY(-30px);
   opacity: 0;
 }
-
 .personal {
   cursor: pointer;
   text-decoration: underline;
