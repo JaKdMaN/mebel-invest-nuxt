@@ -85,7 +85,7 @@ export default {
             document.getElementById('tel').value = ''
             this.personalData = false;
             console.log(response);
-            window.location.href = '/ThankYou'
+            window.location.href = '/thank-you'
             // Swal.fire({
             //   title: 'Готово!',
             //   text: 'Ваша заявка успешно отправлена',

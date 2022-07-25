@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: 'IndexPage',
+  name: 'index',
   head(){
     return {
       title: 'Мебель Инвест'

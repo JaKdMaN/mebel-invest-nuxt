@@ -88,7 +88,7 @@ export default {
           )
           .then((response) => {
             console.log(response);
-            window.location.href = '/ThankYou'
+            window.location.href = '/thank-you'
             // Swal.fire({
             //   title: 'Готово!',
             //   text: 'Ваша заявка успешно отправлена',

@@ -24,7 +24,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: './plugins/vue-awesome-swiper.js', ssr: false }
+    { src: './plugins/vue-awesome-swiper.js', ssr: false },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -39,6 +39,23 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: "AIzaSyDjqGGUxMrZpYpSIc27YovYq8gwCm7YYIs",
+          authDomain: "mebel-invest-base.firebaseapp.com",
+          databaseURL: "https://mebel-invest-base-default-rtdb.europe-west1.firebasedatabase.app",
+          projectId: "mebel-invest-base",
+          storageBucket: "mebel-invest-base.appspot.com",
+          messagingSenderId: "848013634645",
+          appId: "1:848013634645:web:76b5ce8043922f4c7e78dc"
+        },
+        services: {
+          auth: true
+        }
+      }
+    ]
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
