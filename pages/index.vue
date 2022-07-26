@@ -8,6 +8,7 @@
     <About/>
     <Process/>
     <Examples @openModal="Open"/>
+    <our-production/>
     <Discounts @openModal="Open"/>
     <Faq/>
     <ContactUs/>

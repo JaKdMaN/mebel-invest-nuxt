@@ -1,105 +1,101 @@
 <template>
-  <section id="work-process">
-    <h1>Как мы работаем</h1>
+  <section class="bath-tab">
+    <h1>наше производство</h1>
 
-    <div v-swiper:mySwiper="swiperOptions">
+    <div v-swiper:mySwiper="productionSwiperOptions">
+
       <div class="swiper-wrapper">
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/how-slider1.png" alt="заявка" />
+            <img src="@/assets/images/production1.jpg" alt="Production1"/>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slider-img">
+            <img src="@/assets/images/production2.jpg" alt="Production2"/>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slider-img">
+            <img src="@/assets/images/Production3.jpg" alt="Production3"/>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/how-slider2.png" alt="Дизайн проект" />
+            <img src="@/assets/images/Production4.jpg" alt="Production3"/>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/how-slider3.png" alt="договр" />
+            <img src="@/assets/images/Production5.jpg" alt="Production3"/>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/how-slider4.png" alt="Создаем мебель" />
+            <img src="@/assets/images/Production6.jpg" alt="Production3"/>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/how-slider5.png" alt="доставка и сборка" />
+            <img src="@/assets/images/Production7.jpg" alt="Production3"/>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/how-slider6.png" alt="связь" />
+            <img src="@/assets/images/Production8.jpg" alt="Production3"/>
           </div>
         </div>
+
       </div>
+
+      <div class="swiper-pagination swiper-pagination-bullets"></div>
+
       <div class="leftClick">
-        <img src="@/assets/icons/slide-r.svg" alt="prev" />
+        <img src="@/assets/icons/slide-r.svg" alt="prev"/>
       </div>
       <div class="rightClick">
-        <img src="@/assets/icons/slide-r.svg" alt="next" />
+        <img src="@/assets/icons/slide-r.svg" alt="prev"/>
       </div>
+
     </div>
   </section>
 </template>
-
 <script>
-
 export default {
-  name: 'Process',
-  data(){
-    return{
-      swiperOptions: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
+  name: 'OurProduction',
+  data() {
+    return {
+      productionSwiperOptions: {
         breakpointsInverse: true,
+        loop: true,
+        slidesPerView: 3,
+        slidesPerGroup: 1,
         navigation: {
           nextEl: ".rightClick",
           prevEl: ".leftClick",
         },
         breakpoints: {
-          1: {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-          },
-          700: {
-            slidesPerGroup: 2,
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerGroup: 3,
-            slidesPerView: 3,
-            spaceBetween: 20,
-          }
+          1: {slidesPerView: 1},
+          560: {slidesPerView: 2,spaceBetween: 20},
+          1024: {slidesPerView: 3,spaceBetween: 20}
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true
         }
       }
     }
   }
-};
+}
 </script>
-
 <style lang="scss" scoped>
 
-#work-process {
-  margin: 0px 100px 80px 100px;
-  text-align: center;
-  @media screen and (max-width: 1300px) {
-    margin: 0 80px 80px 80px;
-  }
-
-  @media screen and (max-width: 1024px) {
-    margin: 0 50px 80px 50px;
-  }
-  @media screen and (max-width: 768px) {
-    margin: 0 40px 60px 40px;
-  }
-  @media screen and (max-width: 560px) {
-    margin: 0 20px 40px 20px;
-  }
+.bath-tab {
+  margin: 0 100px 100px 100px;
 
   h1 {
     font-weight: 700;
@@ -107,44 +103,39 @@ export default {
     line-height: 82px;
     text-transform: uppercase;
     color: var(--secondary-color);
+    text-align: center;
     margin-bottom: 40px;
-
-    @media screen and(max-width:1300px) {
+    @media screen and(max-width: 1600px) {
+      margin-bottom: 60px;
+    }
+    @media screen and(max-width: 1300px) {
       font-size: 48px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
-    @media screen and(max-width:1024px) {
+    @media screen and(max-width: 1024px) {
       font-size: 42px;
+      margin-bottom: 20px;
     }
-    @media screen and(max-width:768px) {
+    @media screen and(max-width: 768px) {
       font-size: 36px;
+      margin-bottom: 10px;
     }
-    @media screen and(max-width:550px) {
+    @media screen and(max-width: 550px) {
       font-size: 30px;
       line-height: 41px;
     }
   }
-  .swiper-slide {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    .slider-img {
-      & img {
-        margin: auto;
-        width: 100%;
-        height: 100%;
-        // max-height: 738px;
-        object-fit: contain;
-        @media screen and(max-width:700px) {
-          min-width: 380px;
-        }
-        @media screen and(max-width:440px) {
-          min-width: 340px;
-        }
-      }
-    }
+}
+
+.swiper-slide {
+
+  & img {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }
 
@@ -152,7 +143,7 @@ export default {
 .rightClick {
   padding: 5px;
   position: absolute;
-  top: 30%;
+  top: 45%;
   right: 10px;
   z-index: 1;
   border-radius: 50%;
@@ -160,6 +151,7 @@ export default {
   align-items: center;
   justify-content: center;
   background-color: var(--secondary-color);
+
   img {
     height: 60px;
     width: 60px;
@@ -187,11 +179,13 @@ export default {
     }
   }
 }
+
 .leftClick {
   padding: 5px;
 
   position: absolute;
-  top: 30%;
+  top: 45%;
+
   left: 10px;
   z-index: 1;
   border-radius: 50%;
@@ -202,11 +196,13 @@ export default {
 
   cursor: pointer;
   transform: rotate(180deg);
+
   img {
     height: 60px;
     width: 60px;
     right: -5px;
   }
+
   @media screen and (max-width: 1600px) {
     img {
       height: 50px;
