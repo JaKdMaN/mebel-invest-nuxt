@@ -4,18 +4,17 @@
     <div class="tabs">
       <div class="tabs-nav">
         <div v-swiper:mySwiper="allExamplesSwiperOptions">
-
           <div class="swiper-wrapper">
-            <div class="swiper-slide nav-block"
-                 v-for="tab in tabs"
-                 :key="tab"
-                 @click="currentTab = tab"
-                 :class="['tab-button', { active: currentTab === tab }]"
+            <div
+              class="swiper-slide nav-block"
+              v-for="tab in tabs"
+              :key="tab"
+              @click="currentTab = tab"
+              :class="['tab-button', { active: currentTab === tab }]"
             >
               <p>{{ normalizeName(tab) }}</p>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -25,10 +24,12 @@
       Оставить заявку
     </button>
   </section>
-
 </template>
 
 <script>
+import Desks from "@/components/tabs/Desks";
+import Stelaji from "@/components/tabs/Stelaji";
+import Stoiki from "@/components/tabs/Stoiki";
 import Kitchen from "@/components/tabs/Kitchen";
 import LivingRoom from "@/components/tabs/LivingRoom";
 import Bath from "@/components/tabs/Bath";
@@ -39,7 +40,19 @@ import Beds from "@/components/tabs/Beds";
 import Garderob from "@/components/tabs/Garderob";
 
 export default {
-  components: {Kitchen, Bath, LivingRoom, Shkaf, Office, Prihojie, Beds, Garderob},
+  components: {
+    Desks,
+    Stelaji,
+    Stoiki,
+    Kitchen,
+    Bath,
+    LivingRoom,
+    Shkaf,
+    Office,
+    Prihojie,
+    Beds,
+    Garderob,
+  },
   emits: {
     openModal: null,
   },
@@ -48,6 +61,9 @@ export default {
       toggleModal: false,
       currentTab: "Kitchen",
       tabs: [
+        "Desks",
+        "Stelaji",
+        "Stoiki",
         "Kitchen",
         "LivingRoom",
         "Shkaf",
@@ -55,17 +71,17 @@ export default {
         "Prihojie",
         "Beds",
         "Garderob",
-        "Bath"
+        "Bath",
       ],
       allExamplesSwiperOptions: {
         slidesPerView: 6,
         breakpointsInverse: true,
         slideToClickedSlide: true,
         breakpoints: {
-          1: {slidesPerView: 3},
-          650: {slidesPerView: 5}
-        }
-      }
+          1: { slidesPerView: 3 },
+          650: { slidesPerView: 5 },
+        },
+      },
     };
   },
   methods: {
@@ -73,26 +89,30 @@ export default {
       return name === "Kitchen"
         ? "Кухни"
         : name === "LivingRoom"
-          ? "Гостинные"
-          : name === "Bath"
-            ? "Ванные"
-            : name === "Beds"
-              ? "Кровати"
-              : name === "Garderob"
-                ? "Гардеробные"
-                : name === "Office"
-                  ? "Для офиса"
-                  : name === "Prihojie"
-                    ? "Прихожие"
-                    : "Шкафы";
+        ? "Гостинные"
+        : name === "Bath"
+        ? "Ванные"
+        : name === "Beds"
+        ? "Кровати"
+        : name === "Garderob"
+        ? "Гардеробные"
+        : name === "Office"
+        ? "Для офиса"
+        : name === "Prihojie"
+        ? "Прихожие"
+        : name === "Desks"
+        ? "Парты"
+        : name === "Stelaji"
+        ? "Стелажи"
+        : name === "Stoiki"
+        ? "Стойки"
+        : "Шкафы";
     },
   },
 };
 </script>
 
 <style lang="scss" scoped>
-
-
 .slide-fade-enter-active {
   transition: all 0.3s ease-out;
 }
