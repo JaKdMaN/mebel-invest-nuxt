@@ -1,36 +1,28 @@
 <template>
   <div>
     <client-only>
-      <mi-header/>
+      <mi-header />
     </client-only>
-    <Main @openModal="Open"/>
-    <Terms/>
-    <About/>
-    <Process/>
-    <Examples @openModal="Open"/>
-    <our-production/>
-    <Discounts @openModal="Open"/>
-    <Faq/>
-    <ContactUs/>
-    <mi-footer/>
-      <mi-modal
-        :showModal="openModal"
-        @close="openModal = false"
-      />
+    <Main @openModal="Open" />
+    <Terms />
+    <About />
+    <Process />
+    <Examples @openModal="Open" />
+    <our-production />
+    <Discounts @openModal="Open" />
+    <Faq />
+    <ContactUs />
+    <mi-footer />
+    <mi-modal :showModal="openModal" @close="openModal = false" />
     <div class="phone__contRound" @click="Open(true)">
-      <img class="img__phone" src="@/assets/images/MebelPhone.png" alt="">
+      <img class="img__phone" src="@/assets/images/MebelPhone.png" alt="" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'index',
-  head(){
-    return {
-      title: 'Мебель Инвест'
-    }
-  },
+  name: "index",
   data() {
     return {
       openModal: false,
@@ -46,7 +38,7 @@ export default {
 
 
 <style lang="scss" scoped>
-.phone__contRound{
+.phone__contRound {
   position: fixed;
   right: 30px;
   bottom: 30px;
@@ -59,18 +51,18 @@ export default {
   padding: 10px;
   cursor: pointer;
 
-  img{
+  img {
     width: 60px;
   }
 
   @media screen and (max-width: 1440px) {
-    img{
+    img {
       width: 50px;
     }
   }
 
   @media screen and (max-width: 1200px) {
-    img{
+    img {
       width: 40px;
     }
   }
@@ -80,5 +72,4 @@ export default {
     bottom: 20px;
   }
 }
-
 </style>

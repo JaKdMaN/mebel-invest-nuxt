@@ -2,7 +2,7 @@ export default {
 	// Global page headers: https://go.nuxtjs.dev/config-head
 	target: 'static',
 	head: {
-		title: 'mebel-invest-nuxt',
+		title: 'Мебель Инвест',
 		htmlAttrs: {
 			lang: 'en'
 		},
@@ -39,6 +39,13 @@ export default {
 	buildModules: [
 		'@nuxtjs/google-fonts'
 	],
+
+	googleFonts: {
+		families: {
+			"Opent Sans": [300, 400, 500, 600, 700, 800]
+		},
+		display: 'swap'
+	},
 
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules: [

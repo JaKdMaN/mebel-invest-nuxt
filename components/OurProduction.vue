@@ -3,69 +3,65 @@
     <h1>наше производство</h1>
 
     <div v-swiper:mySwiper="productionSwiperOptions">
-
       <div class="swiper-wrapper">
-
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/production1.jpg" alt="Production1"/>
+            <img src="@/assets/images/production1.jpg" alt="Production1" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/production2.jpg" alt="Production2"/>
+            <img src="@/assets/images/production2.jpg" alt="Production2" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/Production3.jpg" alt="Production3"/>
+            <img src="@/assets/images/Production3.jpg" alt="Production3" />
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/Production4.jpg" alt="Production3"/>
+            <img src="@/assets/images/Production4.jpg" alt="Production3" />
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/Production5.jpg" alt="Production3"/>
+            <img src="@/assets/images/Production5.jpg" alt="Production3" />
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/Production6.jpg" alt="Production3"/>
+            <img src="@/assets/images/Production6.jpg" alt="Production3" />
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/Production7.jpg" alt="Production3"/>
+            <img src="@/assets/images/Production7.jpg" alt="Production3" />
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/Production8.jpg" alt="Production3"/>
+            <img src="@/assets/images/Production8.jpg" alt="Production3" />
           </div>
         </div>
-
       </div>
 
       <div class="swiper-pagination swiper-pagination-bullets"></div>
 
       <div class="leftClick">
-        <img src="@/assets/icons/slide-r.svg" alt="prev"/>
+        <img src="@/assets/icons/slide-r.svg" alt="prev" />
       </div>
       <div class="rightClick">
-        <img src="@/assets/icons/slide-r.svg" alt="prev"/>
+        <img src="@/assets/icons/slide-r.svg" alt="prev" />
       </div>
-
     </div>
   </section>
 </template>
 <script>
 export default {
-  name: 'OurProduction',
+  name: "OurProduction",
   data() {
     return {
       productionSwiperOptions: {
@@ -78,25 +74,35 @@ export default {
           prevEl: ".leftClick",
         },
         breakpoints: {
-          1: {slidesPerView: 1},
-          560: {slidesPerView: 2,spaceBetween: 20},
-          1024: {slidesPerView: 3,spaceBetween: 20}
+          1: { slidesPerView: 1 },
+          560: { slidesPerView: 2, spaceBetween: 20 },
+          1024: { slidesPerView: 3, spaceBetween: 20 },
         },
         pagination: {
-          el: '.swiper-pagination',
-          type: 'bullets',
-          clickable: true
-        }
-      }
-    }
-  }
-}
+          el: ".swiper-pagination",
+          type: "bullets",
+          clickable: true,
+        },
+      },
+    };
+  },
+};
 </script>
 <style lang="scss" scoped>
-
 .bath-tab {
   margin: 0 100px 100px 100px;
-
+  @media screen and (max-width: 1300px) {
+    margin: 0 80px 80px 80px;
+  }
+  @media screen and (max-width: 1024px) {
+    margin: 0 50px 80px 50px;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 0 40px 80px 40px;
+  }
+  @media screen and (max-width: 560px) {
+    margin: 0 20px 80px 20px;
+  }
   h1 {
     font-weight: 700;
     font-size: 60px;
@@ -125,11 +131,9 @@ export default {
       line-height: 41px;
     }
   }
-
 }
 
 .swiper-slide {
-
   & img {
     margin: auto;
     width: 100%;
@@ -138,7 +142,6 @@ export default {
     object-position: center;
   }
 }
-
 
 .rightClick {
   padding: 5px;
