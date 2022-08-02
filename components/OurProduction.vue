@@ -6,44 +6,44 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/production1.jpg" alt="Production1" />
+            <img src="@/assets/images/production1.webp" alt="Production1" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/production2.jpg" alt="Production2" />
+            <img src="@/assets/images/production2.webp" alt="Production2" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/Production3.jpg" alt="Production3" />
+            <img src="@/assets/images/Production3.webp" alt="Production3" />
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/Production4.jpg" alt="Production3" />
+            <img src="@/assets/images/Production4.webp" alt="Production3" />
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/Production5.jpg" alt="Production3" />
+            <img src="@/assets/images/Production5.webp" alt="Production3" />
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/Production6.jpg" alt="Production3" />
+            <img src="@/assets/images/Production6.webp" alt="Production3" />
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/Production7.jpg" alt="Production3" />
+            <img src="@/assets/images/Production7.webp" alt="Production3" />
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/Production8.jpg" alt="Production3" />
+            <img src="@/assets/images/Production8.webp" alt="Production3" />
           </div>
         </div>
       </div>

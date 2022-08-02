@@ -1,63 +1,60 @@
 <template>
   <section class="bath-tab">
     <div v-swiper:mySwiper="examplesSwiperOptions">
-
       <div class="swiper-wrapper">
-
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/bath/1.jpg" alt=""/>
+            <img src="@/assets/images/tabs/bath/1.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/bath/2.jpg" alt=""/>
+            <img src="@/assets/images/tabs/bath/2.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/bath/3.jpg" alt=""/>
+            <img src="@/assets/images/tabs/bath/3.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/bath/4.jpg" alt=""/>
-          </div>
-        </div>
-
-
-        <div class="swiper-slide">
-          <div class="slider-img">
-            <img src="@/assets/images/tabs/bath/5.jpg" alt=""/>
+            <img src="@/assets/images/tabs/bath/4.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/bath/6.jpg" alt=""/>
+            <img src="@/assets/images/tabs/bath/5.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/bath/7.jpg" alt=""/>
+            <img src="@/assets/images/tabs/bath/6.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/bath/8.jpg" alt=""/>
+            <img src="@/assets/images/tabs/bath/7.webp" alt="" />
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slider-img">
+            <img src="@/assets/images/tabs/bath/8.webp" alt="" />
           </div>
         </div>
       </div>
       <div class="leftClick">
-        <img src="@/assets/icons/slide-r.svg" alt="prev"/>
+        <img src="@/assets/icons/slide-r.svg" alt="prev" />
       </div>
       <div class="rightClick">
-        <img src="@/assets/icons/slide-r.svg" alt="prev"/>
+        <img src="@/assets/icons/slide-r.svg" alt="prev" />
       </div>
     </div>
   </section>
@@ -73,21 +70,19 @@ export default {
           nextEl: ".rightClick",
           prevEl: ".leftClick",
         },
-          breakpointsInverse: true,
-          breakpoints: {
-            1: {slidesPerView: 1, slidesPerGroup: 1},
-            560: {slidesPerView: 2,spaceBetween: 20},
-            1024: {slidesPerView: 3,spaceBetween: 20}
-          }
-      }
-    }
-  }
-}
+        breakpointsInverse: true,
+        breakpoints: {
+          1: { slidesPerView: 1, slidesPerGroup: 1 },
+          560: { slidesPerView: 2, spaceBetween: 20 },
+          1024: { slidesPerView: 3, spaceBetween: 20 },
+        },
+      },
+    };
+  },
+};
 </script>
 <style lang="scss" scoped>
-
 .swiper-slide {
-
   & img {
     margin: auto;
     width: 100%;
@@ -96,7 +91,6 @@ export default {
     object-position: center;
   }
 }
-
 
 .rightClick {
   padding: 5px;

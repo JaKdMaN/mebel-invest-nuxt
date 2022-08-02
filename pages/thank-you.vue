@@ -3,10 +3,14 @@
     <section id="modal">
       <div class="contact-form">
         <h1>СПАСИБО ЗА ОСТАВЛЕННУЮ ЗАЯВКУ!</h1>
-        <p style="text-align: center;">
-          Заявка успешно отправлена, наш специалист свяжется с Вами в рабочее время 09.00-18.00
+        <p style="text-align: center">
+          Заявка успешно отправлена, наш специалист свяжется с Вами в рабочее
+          время 09.00-18.00
         </p>
-        <button class="button button-primary" onclick="window.location.href='/'">
+        <button
+          class="button button-primary"
+          onclick="window.location.href='/'"
+        >
           Назад на главную
         </button>
       </div>
@@ -16,12 +20,12 @@
 
 <script>
 export default {
-  name: 'ThankYouPage'
-}
+  name: "ThankYouPage",
+};
 </script>
 
 <style lang="scss" scoped>
-h1{
+h1 {
   text-align: center;
 }
 .personal {
@@ -52,7 +56,7 @@ h1{
   cursor: pointer;
 }
 #modal {
-  background-image: url("~@/assets/images/modal.jpg");
+  background-image: url("~@/assets/images/modal.webp");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -322,15 +326,15 @@ h1{
 </style>
 
 <style>
-.swal2-confirm{
+.swal2-confirm {
   background: #b0baa4 !important;
   padding: 0.625em 2.1em;
   border-radius: 1.25em !important;
 }
-.swal2-confirm:focus{
+.swal2-confirm:focus {
   box-shadow: none !important;
 }
-.swal2-popup{
+.swal2-popup {
   border-radius: 27px !important;
 }
 </style>

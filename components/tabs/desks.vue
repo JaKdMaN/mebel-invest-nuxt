@@ -4,64 +4,64 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/desks/1.jpg" alt="" />
+            <img src="@/assets/images/tabs/desks/1.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/desks/2.jpg" alt="" />
+            <img src="@/assets/images/tabs/desks/2.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/desks/3.jpg" alt="" />
+            <img src="@/assets/images/tabs/desks/3.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/desks/4.jpg" alt="" />
+            <img src="@/assets/images/tabs/desks/4.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/desks/5.jpg" alt="" />
+            <img src="@/assets/images/tabs/desks/5.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/desks/6.jpg" alt="" />
+            <img src="@/assets/images/tabs/desks/6.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/desks/7.jpg" alt="" />
+            <img src="@/assets/images/tabs/desks/7.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/desks/8.jpg" alt="" />
+            <img src="@/assets/images/tabs/desks/8.webp" alt="" />
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/desks/9.jpg" alt="" />
+            <img src="@/assets/images/tabs/desks/9.webp" alt="" />
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/desks/10.jpg" alt="" />
+            <img src="@/assets/images/tabs/desks/10.webp" alt="" />
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/desks/11.jpg" alt="" />
+            <img src="@/assets/images/tabs/desks/11.webp" alt="" />
           </div>
         </div>
       </div>

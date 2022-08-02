@@ -1,5 +1,5 @@
 <template>
-  <lead-off-list :people="people" @load="loadPeople" @remove="removePerson"/>
+  <lead-off-list :people="people" @load="loadPeople" @remove="removePerson" />
 </template>
 
 <script>
@@ -43,7 +43,7 @@ export default {
           `https://mebel-invest-base-default-rtdb.europe-west1.firebasedatabase.app/people-off/${id}.json`
         );
         this.people = this.people.filter((person) => person.id !== id);
-      } catch (e) { }
+      } catch (e) {}
     },
   },
 };

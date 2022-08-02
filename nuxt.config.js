@@ -51,6 +51,7 @@ export default {
 	modules: [
 		// https://go.nuxtjs.dev/bootstrap
 		'bootstrap-vue/nuxt',
+		'@nuxt/image',
 		[
 			'@nuxtjs/firebase',
 			{

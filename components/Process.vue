@@ -4,35 +4,37 @@
 
     <div v-swiper:mySwiper="swiperOptions">
       <div class="swiper-wrapper">
-
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/how-slider1.png" alt="заявка" />
+            <img src="@/assets/images/how-slider1.webp" alt="заявка" />
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/how-slider2.png" alt="Дизайн проект" />
+            <img src="@/assets/images/how-slider2.webp" alt="Дизайн проект" />
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/how-slider3.png" alt="договр" />
+            <img src="@/assets/images/how-slider3.webp" alt="договр" />
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/how-slider4.png" alt="Создаем мебель" />
+            <img src="@/assets/images/how-slider4.webp" alt="Создаем мебель" />
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/how-slider5.png" alt="доставка и сборка" />
+            <img
+              src="@/assets/images/how-slider5.webp"
+              alt="доставка и сборка"
+            />
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/how-slider6.png" alt="связь" />
+            <img src="@/assets/images/how-slider6.webp" alt="связь" />
           </div>
         </div>
       </div>
@@ -47,11 +49,10 @@
 </template>
 
 <script>
-
 export default {
-  name: 'Process',
-  data(){
-    return{
+  name: "Process",
+  data() {
+    return {
       swiperOptions: {
         slidesPerView: 3,
         slidesPerGroup: 3,
@@ -74,16 +75,15 @@ export default {
             slidesPerGroup: 3,
             slidesPerView: 3,
             spaceBetween: 20,
-          }
-        }
-      }
-    }
-  }
+          },
+        },
+      },
+    };
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-
 #work-process {
   margin: 0px 100px 80px 100px;
   text-align: center;
@@ -147,7 +147,6 @@ export default {
     }
   }
 }
-
 
 .rightClick {
   padding: 5px;

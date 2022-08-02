@@ -1,41 +1,68 @@
 <template>
   <transition name="slide-fade">
-  <div class="wrap" v-show="showModal">
+    <div class="wrap" v-show="showModal">
       <section id="modal">
-      <img src="@/assets/icons/close.svg" class="close-modal" alt="close" @click="closeModal()" />
-      <div class="contact-form">
-        <h1>Оставьте заявку</h1>
-        <p>
-          Если у Вас еще остались вопросы или Вы хотите обсудить свой проект,
-          оставьте заявку и мы перезвоним Вам в ближайшее время!
-        </p>
-        <form>
-          <div class="wrapper">
-            <input type="text" id="name" placeholder="Имя" :class="{ 'error-input': nameFail }" v-model="modelName" />
-            <label for="name" class="error" v-if="nameFail">{{
+        <img
+          src="@/assets/icons/close.svg"
+          class="close-modal"
+          alt="close"
+          @click="closeModal()"
+        />
+        <div class="contact-form">
+          <h1>Оставьте заявку</h1>
+          <p>
+            Если у Вас еще остались вопросы или Вы хотите обсудить свой проект,
+            оставьте заявку и мы перезвоним Вам в ближайшее время!
+          </p>
+          <form>
+            <div class="wrapper">
+              <input
+                type="text"
+                id="name"
+                placeholder="Имя"
+                :class="{ 'error-input': nameFail }"
+                v-model="modelName"
+              />
+              <label for="name" class="error" v-if="nameFail">{{
                 errors.modelName
               }}</label>
-          </div>
-          <div class="wrapper">
-            <input type="tel" ref="tel" id="tel2" :class="{ 'error-input': telFail }" placeholder="+7 771 191 17 35"
-                   @input="disableError" />
-            <label for="name" class="error" v-if="telFail">{{
+            </div>
+            <div class="wrapper">
+              <input
+                type="tel"
+                ref="tel"
+                id="tel2"
+                :class="{ 'error-input': telFail }"
+                placeholder="+7 771 191 17 35"
+                @input="disableError"
+              />
+              <label for="name" class="error" v-if="telFail">{{
                 errors.phoneNum
               }}</label>
-          </div>
-          <button class="button button-primary" @click.prevent="submitPerson">
-            Отправить
-          </button>
-          <div class="submit-checkbox">
-            <div class="checkbox-container">
-              <input type="checkbox" v-model="personalData" :class="{ 'error-chk': checkFail }" id="someModal" />
-              <label for="someModal" :class="['some__label', { 'error-chk': checkFail }]"></label>
             </div>
-            <span :class="{ 'error-chk': checkFail }">Я даю свое согласие на обработку персональных данных</span>
-          </div>
-        </form>
-      </div>
-    </section>
+            <button class="button button-primary" @click.prevent="submitPerson">
+              Отправить
+            </button>
+            <div class="submit-checkbox">
+              <div class="checkbox-container">
+                <input
+                  type="checkbox"
+                  v-model="personalData"
+                  :class="{ 'error-chk': checkFail }"
+                  id="someModal"
+                />
+                <label
+                  for="someModal"
+                  :class="['some__label', { 'error-chk': checkFail }]"
+                ></label>
+              </div>
+              <span :class="{ 'error-chk': checkFail }"
+                >Я даю свое согласие на обработку персональных данных</span
+              >
+            </div>
+          </form>
+        </div>
+      </section>
     </div>
   </transition>
 </template>
@@ -44,7 +71,7 @@
 import IMask from "imask";
 import axios from "axios";
 export default {
-  name: 'MiModal',
+  name: "MiModal",
   props: {
     showModal: Boolean,
   },
@@ -88,7 +115,7 @@ export default {
           )
           .then((response) => {
             console.log(response);
-            window.location.href = '/thank-you'
+            window.location.href = "/thank-you";
             // Swal.fire({
             //   title: 'Готово!',
             //   text: 'Ваша заявка успешно отправлена',
@@ -96,18 +123,18 @@ export default {
             //   confirmButtonText: 'Продолжить',
             //   timer: 3000
             // })
-            document.getElementById('tel2').value = ''
-            this.closeModal()
+            document.getElementById("tel2").value = "";
+            this.closeModal();
           })
           .catch(function (error) {
             console.log(error);
             Swal.fire({
-              title: 'Ошибка!',
-              text: 'Пожалуйста, повторите попытку, либо свяжитесь с нами по телефону',
-              icon: 'error',
-              confirmButtonText: 'Продолжить',
-              timer: 3000
-            })
+              title: "Ошибка!",
+              text: "Пожалуйста, повторите попытку, либо свяжитесь с нами по телефону",
+              icon: "error",
+              confirmButtonText: "Продолжить",
+              timer: 3000,
+            });
           });
       }
     },
@@ -153,14 +180,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .slide-fade-enter-active {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 .slide-fade-leave-active {
-  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
 }
-.slide-fade-enter, .slide-fade-leave-to {
+.slide-fade-enter,
+.slide-fade-leave-to {
   transform: translateY(-30px);
   opacity: 0;
 }
@@ -196,7 +223,7 @@ export default {
 }
 
 #modal {
-  background-image: url("~@/assets/images/modal.jpg");
+  background-image: url("~/assets/images/modal.webp");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -423,7 +450,6 @@ export default {
   }
 
   @keyframes shake {
-
     10%,
     90% {
       transform: translate3d(-1px, 0, 0);
@@ -463,7 +489,7 @@ export default {
   // color:red;
 }
 
-#someModal:checked+label:after {
+#someModal:checked + label:after {
   content: "\2713";
   position: absolute;
   left: 50%;

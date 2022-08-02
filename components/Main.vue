@@ -21,7 +21,7 @@
             >
               Оставить заявку
             </button>
-        </div>
+          </div>
         </div>
         <div class="swiper-slide">
           <div class="slide-block section second">
@@ -71,22 +71,22 @@
 
 <script>
 export default {
-  name: 'Main',
+  name: "Main",
   data() {
     return {
       toggleModal: false,
       mainSwiperOptions: {
-        effect: 'fade',
+        effect: "fade",
         autoplay: true,
         delay: 5000,
         loop: true,
         disableOnInteraction: false,
         loadPrevNext: true,
         loadPrevNextAmount: 2,
-      }
-    }
-  }
-}
+      },
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -445,15 +445,15 @@ export default {
   }
 
   .first {
-    background-image: url("~/assets/images/welcome1.jpg");
+    background-image: url("~/assets/images/welcome1.webp");
   }
 
   .second {
-    background-image: url("~/assets/images/welcome2.jpg");
+    background-image: url("~/assets/images/welcome2.webp");
   }
 
   .third {
-    background-image: url("~/assets/images/welcome3.jpg");
+    background-image: url("~/assets/images/welcome3.webp");
   }
 }
 </style>

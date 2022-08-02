@@ -4,59 +4,59 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/Stoiki/1.jpg" alt="" />
+            <img src="@/assets/images/tabs/Stoiki/1.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/Stoiki/2.jpg" alt="" />
+            <img src="@/assets/images/tabs/Stoiki/2.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/Stoiki/3.jpg" alt="" />
+            <img src="@/assets/images/tabs/Stoiki/3.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/Stoiki/4.jpg" alt="" />
+            <img src="@/assets/images/tabs/Stoiki/4.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/Stoiki/5.jpg" alt="" />
+            <img src="@/assets/images/tabs/Stoiki/5.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/Stoiki/6.jpg" alt="" />
+            <img src="@/assets/images/tabs/Stoiki/6.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/Stoiki/7.jpg" alt="" />
+            <img src="@/assets/images/tabs/Stoiki/7.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/Stoiki/8.jpg" alt="" />
+            <img src="@/assets/images/tabs/Stoiki/8.webp" alt="" />
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/Stoiki/9.jpg" alt="" />
+            <img src="@/assets/images/tabs/Stoiki/9.webp" alt="" />
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/Stoiki/10.jpg" alt="" />
+            <img src="@/assets/images/tabs/Stoiki/10.webp" alt="" />
           </div>
         </div>
       </div>

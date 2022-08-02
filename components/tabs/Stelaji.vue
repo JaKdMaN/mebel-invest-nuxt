@@ -4,43 +4,43 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/Stelaji/1.jpg" alt="" />
+            <img src="@/assets/images/tabs/Stelaji/1.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/Stelaji/2.jpg" alt="" />
+            <img src="@/assets/images/tabs/Stelaji/2.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/Stelaji/3.jpg" alt="" />
+            <img src="@/assets/images/tabs/Stelaji/3.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/Stelaji/4.jpg" alt="" />
+            <img src="@/assets/images/tabs/Stelaji/4.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/Stelaji/5.jpg" alt="" />
+            <img src="@/assets/images/tabs/Stelaji/5.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/Stelaji/6.jpg" alt="" />
+            <img src="@/assets/images/tabs/Stelaji/6.webp" alt="" />
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="slider-img">
-            <img src="@/assets/images/tabs/Stelaji/7.jpg" alt="" />
+            <img src="@/assets/images/tabs/Stelaji/7.webp" alt="" />
           </div>
         </div>
       </div>

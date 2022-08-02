@@ -19,7 +19,7 @@
           <div class="numbers-block">
             <div class="col">
               <div class="left">
-               <p>1,500</p>
+                <p>1,500</p>
                 <p style="margin-top: 15px">
                   м<sup><small>2</small></sup>
                 </p>
@@ -47,7 +47,7 @@
           <div class="numbers-block">
             <div class="col">
               <div class="left">
-               <p>1,000</p>
+                <p>1,000</p>
                 <p class="plus">+</p>
               </div>
               <div class="right">
@@ -59,7 +59,7 @@
             </div>
             <div class="col">
               <div class="left">
-               <p>20</p>
+                <p>20</p>
               </div>
               <div class="right">
                 <p>
@@ -78,7 +78,7 @@
 
 <script>
 export default {
-  name: 'About'
+  name: "About",
   // data() {
   //   return {
   //     inView: false,
@@ -110,7 +110,7 @@ export default {
   //   "vue-counter": Vue3Autocounter,
   //   "watch-intersect": WatchInterest,
   // }
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -444,7 +444,7 @@ export default {
       }
     }
     .company-img {
-      background-image: url('~/assets/images/about-company.jpg');
+      background-image: url("~/assets/images/about-company.webp");
       background-size: cover;
       background-position: center;
       width: 100%;

@@ -8,27 +8,49 @@
       </p>
       <form action="post">
         <div class="wrapper">
-          <input type="text" id="name" placeholder="Имя" :class="{ 'error-input': nameFail }" v-model="modelName" />
+          <input
+            type="text"
+            id="name"
+            placeholder="Имя"
+            :class="{ 'error-input': nameFail }"
+            v-model="modelName"
+          />
           <label for="name" class="error" v-if="nameFail">{{
-              errors.modelName
-            }}</label>
+            errors.modelName
+          }}</label>
         </div>
         <div class="wrapper">
-          <input type="tel" ref="tel" id="tel" :class="{ 'error-input': telFail }" placeholder="+7 771 191 17 35"
-                 @input="disableError" />
+          <input
+            type="tel"
+            ref="tel"
+            id="tel"
+            :class="{ 'error-input': telFail }"
+            placeholder="+7 771 191 17 35"
+            @input="disableError"
+          />
           <label for="name" class="error" v-if="telFail">{{
-              errors.phoneNum
-            }}</label>
+            errors.phoneNum
+          }}</label>
         </div>
         <button class="button button-primary" @click.prevent="submitPerson">
           Отправить
         </button>
         <div class="submit-checkbox">
           <div class="checkbox-container">
-            <input type="checkbox" v-model="personalData" :class="{ 'error-chk': checkFail }" id="some" />
-            <label for="some" :class="['some__label', { 'error-chk': checkFail }]"></label>
+            <input
+              type="checkbox"
+              v-model="personalData"
+              :class="{ 'error-chk': checkFail }"
+              id="some"
+            />
+            <label
+              for="some"
+              :class="['some__label', { 'error-chk': checkFail }]"
+            ></label>
           </div>
-          <span :class="{ 'error-chk': checkFail }">Я даю свое согласие на обработку персональных данных</span>
+          <span :class="{ 'error-chk': checkFail }"
+            >Я даю свое согласие на обработку персональных данных</span
+          >
         </div>
       </form>
     </div>
@@ -39,7 +61,7 @@
 import IMask from "imask";
 import axios from "axios";
 export default {
-  name: 'ContactUs',
+  name: "ContactUs",
   data() {
     return {
       modelName: "",
@@ -68,7 +90,6 @@ export default {
         this.checkFail = true;
       }
       if (!this.nameFail && !this.telFail && !this.checkFail) {
-
         let curDate = new Date();
         axios
 
@@ -81,11 +102,11 @@ export default {
             }
           )
           .then((response) => {
-            this.modelName = ''
-            document.getElementById('tel').value = ''
+            this.modelName = "";
+            document.getElementById("tel").value = "";
             this.personalData = false;
             console.log(response);
-            window.location.href = '/thank-you'
+            window.location.href = "/thank-you";
             // Swal.fire({
             //   title: 'Готово!',
             //   text: 'Ваша заявка успешно отправлена',
@@ -97,12 +118,12 @@ export default {
           .catch((error) => {
             console.log(error);
             Swal.fire({
-              title: 'Ошибка!',
-              text: 'Пожалуйста, повторите попытку, либо свяжитесь с нами по телефону',
-              icon: 'error',
-              confirmButtonText: 'Продолжить',
-              timer: 3000
-            })
+              title: "Ошибка!",
+              text: "Пожалуйста, повторите попытку, либо свяжитесь с нами по телефону",
+              icon: "error",
+              confirmButtonText: "Продолжить",
+              timer: 3000,
+            });
           });
       }
     },
@@ -129,7 +150,7 @@ export default {
 
 <style lang="scss" scoped>
 #contact-us {
-  background-image: url("~@/assets/images/contact-us.jpg");
+  background-image: url("~@/assets/images/contact-us.webp");
   background-size: cover;
   background-position: initial;
   display: flex;
@@ -390,7 +411,6 @@ export default {
   }
 
   @keyframes shake {
-
     10%,
     90% {
       transform: translate3d(-1px, 0, 0);
@@ -430,7 +450,7 @@ export default {
   // color:red;
 }
 
-#some:checked+label:after {
+#some:checked + label:after {
   content: "\2713";
   position: absolute;
   left: 50%;

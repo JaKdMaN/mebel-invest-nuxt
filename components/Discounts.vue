@@ -1,73 +1,73 @@
 <template>
   <section id="discounts">
-      <div v-swiper:mySwiper="swipeDiscountsOptions">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="discount first">
-              <div class="slide-text">
-                <h3>скидка - 10%</h3>
-                <p>На все кухни, при заказе с сайта</p>
-              </div>
-              <button
-                class="button button-primary slider-btn"
-                @click="$emit('openModal', true)"
-              >
-                Заказать
-              </button>
+    <div v-swiper:mySwiper="swipeDiscountsOptions">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="discount first">
+            <div class="slide-text">
+              <h3>скидка - 10%</h3>
+              <p>На все кухни, при заказе с сайта</p>
             </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="discount second">
-              <div class="slide-text">
-                <h3>сертификат до 15.000₸</h3>
-                <p>
-                  На матрасы SUPRA, AGORA,<br />
-                  BOSFOR, SPARTA, SIDE
-                </p>
-              </div>
-              <button
-                class="button button-primary slider-btn"
-                @click="$emit('openModal', true)"
-              >
-                Заказать
-              </button>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="discount third">
-              <div class="slide-text">
-                <h3>скидка - 10%</h3>
-                <p>На все шкафы до конца месяца</p>
-              </div>
-              <button
-                class="button button-primary slider-btn"
-                @click="$emit('openModal', true)"
-              >
-                Заказать
-              </button>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="discount fourth">
-              <div class="slide-text">
-                <h3>скидка - 10%</h3>
-                <p>На комплекты офисной мебели</p>
-              </div>
-
-              <button
-                class="button button-primary slider-btn"
-                @click="$emit('openModal', true)"
-              >
-                Заказать
-              </button>
-            </div>
+            <button
+              class="button button-primary slider-btn"
+              @click="$emit('openModal', true)"
+            >
+              Заказать
+            </button>
           </div>
         </div>
-        <div class="swiper-pagination swiper-pagination-bullets"></div>
+
+        <div class="swiper-slide">
+          <div class="discount second">
+            <div class="slide-text">
+              <h3>сертификат до 15.000₸</h3>
+              <p>
+                На матрасы SUPRA, AGORA,<br />
+                BOSFOR, SPARTA, SIDE
+              </p>
+            </div>
+            <button
+              class="button button-primary slider-btn"
+              @click="$emit('openModal', true)"
+            >
+              Заказать
+            </button>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="discount third">
+            <div class="slide-text">
+              <h3>скидка - 10%</h3>
+              <p>На все шкафы до конца месяца</p>
+            </div>
+            <button
+              class="button button-primary slider-btn"
+              @click="$emit('openModal', true)"
+            >
+              Заказать
+            </button>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="discount fourth">
+            <div class="slide-text">
+              <h3>скидка - 10%</h3>
+              <p>На комплекты офисной мебели</p>
+            </div>
+
+            <button
+              class="button button-primary slider-btn"
+              @click="$emit('openModal', true)"
+            >
+              Заказать
+            </button>
+          </div>
+        </div>
       </div>
+      <div class="swiper-pagination swiper-pagination-bullets"></div>
+    </div>
   </section>
 </template>
 
@@ -84,25 +84,17 @@ export default {
         autoplay: true,
         delay: 5000,
         pagination: {
-          el: '.swiper-pagination',
-          type: 'bullets',
-          clickable: true
-        }
-      }
+          el: ".swiper-pagination",
+          type: "bullets",
+          clickable: true,
+        },
+      },
     };
-  }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-
-.carousel-wrapper{
-  ::v-deep.swiper-pagination-bullets-active {
-    background-color: black;
-  }
-}
-
-
 #discounts {
   margin: 0 100px 100px 100px;
 
@@ -241,16 +233,16 @@ export default {
   }
 
   .first {
-    background-image: url("~@/assets/images/discount1.jpg");
+    background-image: url("~@/assets/images/discount1.webp");
   }
   .second {
-    background-image: url("~@/assets/images/discount2.jpg");
+    background-image: url("~@/assets/images/discount2.webp");
   }
   .third {
-    background-image: url("~@/assets/images/discount3.jpg");
+    background-image: url("~@/assets/images/discount3.webp");
   }
   .fourth {
-    background-image: url("~@/assets/images/discount4.jpg");
+    background-image: url("~@/assets/images/discount4.webp");
   }
 }
 </style>
